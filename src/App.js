@@ -6,18 +6,19 @@ import ListadoNoticias from './components/ListadoNoticias';
 function App() {
 
   // definir la categoria y noticias
+  const [ pais, guardarPais ] = useState('co'); 
   const [ categoria, guardarCartegoria ] = useState(''); 
   const [ noticias, guardarNoticias ] = useState([]); 
 
   useEffect(() => {
     const consultarApi = async () => {
-      const url = `https://newsapi.org/v2/top-headlines?country=ve&category=${categoria}&apiKey=44e8506694a3469c87570192c669f8db`;
+      const url = `https://newsapi.org/v2/top-headlines?country=${pais}&category=${categoria}&apiKey=44e8506694a3469c87570192c669f8db`;
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
       guardarNoticias(noticias.articles); 
     }
     consultarApi();
-  }, [categoria]);
+  }, [categoria, pais]);
   return (
     <Fragment>
       <Header 
@@ -26,6 +27,7 @@ function App() {
       <div className="container white">
         <Formulario 
           guardarCartegoria={guardarCartegoria}
+          guardarPais={guardarPais}
         />
       </div>
       <ListadoNoticias 

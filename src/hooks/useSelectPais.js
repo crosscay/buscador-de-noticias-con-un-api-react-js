@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const useSelect = (stateInicial, opciones) => {
+const useSelectPais = (stateInicial, opciones) => {
 
     // state del custom hook
     const [state, actualizarState ] = useState(stateInicial);
 
-   const SelectNoticias = () => (
+   const SelectPais = () => (
        <select
             className="browser-default"
             value={state}
@@ -22,7 +22,7 @@ const useSelect = (stateInicial, opciones) => {
        </select>
    )
 
-   return [state, SelectNoticias]
+   return [state, SelectPais]
 } 
  
-export default useSelect;
+export default useSelectPais;
