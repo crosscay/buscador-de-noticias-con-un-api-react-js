@@ -6,7 +6,7 @@ import ListadoNoticias from './components/ListadoNoticias';
 function App() {
 
   // definir la categoria y noticias
-  const [ pais, guardarPais ] = useState('co'); 
+  const [ pais, guardarPais ] = useState('mx'); 
   const [ categoria, guardarCartegoria ] = useState(''); 
   const [ noticias, guardarNoticias ] = useState([]); 
 

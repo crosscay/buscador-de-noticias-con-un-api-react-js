@@ -14,6 +14,7 @@ const Formulario = ({guardarCartegoria, guardarPais}) => {
         { value: 'ec', label: 'Ecuador' },
         { value: 'pe', label: 'Peru' },
         { value: 'br', label: 'Brasil' },
+        { value: 'mx', label: 'Mexico' },
         { value: 'us', label: 'Estados Unidos' },
         { value: 've', label: 'Venezuela' }
     ]
@@ -30,7 +31,7 @@ const Formulario = ({guardarCartegoria, guardarPais}) => {
 
     // utilizar custom hook
     const [ categoria, SelectNoticias ] = useSelect('general', OPCIONES);
-    const [ pais, SelectPaises ] = useSelectPais('co', OPCIONES_PAISES);
+    const [ pais, SelectPaises ] = useSelectPais('mx', OPCIONES_PAISES);
 
     // submit al form, pasar categoria a app.js
     const buscarNoticias = e => {
