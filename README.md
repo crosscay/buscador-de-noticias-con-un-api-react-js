@@ -6,7 +6,6 @@ Aplicación web creada en react js usando, custom hooks, module css, materialize
 <br />
 <br />
 <br />
-<br />
 ![buscador_2](https://user-images.githubusercontent.com/15184739/91649036-e63a4980-ea34-11ea-9888-31c5bc991d28.PNG)
 
 ### Cómo empezar
