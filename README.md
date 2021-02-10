@@ -13,7 +13,7 @@ Aplicación web creada en react js usando, custom hooks, module css, materialize
 Para iniciar el proyecto utilice:
 
 ```bash
-$ git clon https://github.com/crosscay/buscador-de-noticias-con-una-api-react-js.git
+$ git clon https://github.com/crosscay/buscador-de-noticias-con-un-api-react-js.git
 $ cd buscador-de-noticias-con-una-api
 # instala las dependencias del proyecto
 $ npm i
